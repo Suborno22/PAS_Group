@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        p span {
+            display: inline-block;
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        header h1 {
+            text-align: center;
+            font-size: 65px;
+        }
+
+        header span:nth-child(1) {
+            color: green;
+        }
+
+        header span:nth-child(2) {
+            color: red;
+        }
+
+        header span:nth-child(3) {
+            color: blue;
+        }
+
+        header p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <logo>
+            <div>
+                image in here
+            </div>
+        </logo>
+        <h1><span>P</span><span>A</span><span>S</span><span><r>&nbsp;GROUP</span></h1>
+        <hr>
+        <p>
+            <span>Passionate,</span>
+            <span>Aspiration,</span>
+            <span>Symbolic</span>
+        </p>
+    </header>
+    <script>
+
+    </script>
+</body>
+</html>
