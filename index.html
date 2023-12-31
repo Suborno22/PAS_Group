@@ -15,7 +15,13 @@
                 transform: translateX(0);
             }
         }
-
+        logo 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh; /* Adjust this value as needed */
+        }
         p span {
             display: inline-block;
             animation: fadeInLeft 1s ease-out;
@@ -40,6 +46,19 @@
 
         header p {
             text-align: center;
+        }
+        @media screen and (max-width: 768px) {
+            logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 10vh; /* Adjust this value as needed */
+            }
+
+            header logo div {
+                /* Styles for the image container */
+            }
+
         }
     </style>
 </head>
