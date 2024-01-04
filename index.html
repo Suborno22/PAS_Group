@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <title>Home</title>
     <style>
         @keyframes fadeInLeft {
@@ -15,69 +16,87 @@
                 transform: translateX(0);
             }
         }
-        logo 
+        * 
         {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 10vh; /* Adjust this value as needed */
+            box-sizing: border-box;  
+            /* add box-sizing to universal selector to stop padding pushing things wider than declared */
+        }
+
+        .logo img
+        {
+            display: block;
+            margin: 0 auto;
+            width:25%;
+            height: auto;
         }
         p span {
             display: inline-block;
             animation: fadeInLeft 1s ease-out;
         }
 
-        header h1 {
+        /* header h1 {
             text-align: center;
             font-size: 65px;
-        }
+        } */
 
-        header span:nth-child(1) {
+        p span:nth-child(1) {
             color: green;
         }
 
-        header span:nth-child(2) {
+        p span:nth-child(2) {
             color: red;
         }
 
-        header span:nth-child(3) {
+        p span:nth-child(3) {
             color: blue;
         }
 
         header p {
             text-align: center;
+            font-family: 'Ubuntu',sans-serif;
+            font-size: 32px;
         }
-        @media screen and (max-width: 768px) {
-            logo {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 10vh; /* Adjust this value as needed */
-            }
 
-            header logo div {
-                /* Styles for the image container */
-            }
+        div.scroll-container {
+            background-color: #333;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+            width: 59%;
+            height: auto;
+        }
 
+        div.scroll-container img {
+            padding: 10px;
+            width: 80%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <logo>
-            <div>
-                image in here
-            </div>
-        </logo>
-        <h1><span>P</span><span>A</span><span>S</span><span><r>&nbsp;GROUP</span></h1>
-        <hr>
-        <hr>
+        <div class="logo">
+            <img src="/Images/logo/Real Estate Logo(3)(1)(1).png" alt="Logo">
+        </div>
+        <!-- <h1><span>P</span><span>A</span><span>S</span><span><r>&nbsp;GROUP</span></h1> -->
+
         <p>
             <span>Passionate,</span>
             <span>Aspiration,</span>
             <span>Symbolic</span>
         </p>
+        <hr>
+        <hr>
     </header>
+    <div class="scroll-container">
+        <img src="Images/Bunglows/GettyImages-523075374-8d27b929fdfc4702aab5c73f821a65de.jpg" alt="Bunglow no. 1">
+        <img src="Images/Bunglows/IMG_8052a.jpg" alt="Bunglow no. 2">
+        <img src="Images/Bunglows/GettyImages-523235876-59efa2f5396e5a0010cda6dd.jpg" alt="Bunglow no. 3">
+        <img src="Images/Bunglows/shutterstock_593487752-1024x683.jpg" alt="">
+    </div>
+
+
+
     <script>
 
     </script>
