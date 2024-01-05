@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Akatab' rel='stylesheet'>
     <title>Home</title>
     <style>
         @keyframes fadeInLeft {
@@ -16,87 +17,90 @@
                 transform: translateX(0);
             }
         }
-        * 
-        {
+        
+        * {
             box-sizing: border-box;  
-            /* add box-sizing to universal selector to stop padding pushing things wider than declared */
         }
 
-        .logo img
-        {
-            display: block;
-            margin: 0 auto;
-            width:25%;
+        header {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(122, 153, 153);
+        }
+
+        .logo {
+            flex: 1;
+        }
+
+        .logo img {
+            width: 10%; 
             height: auto;
+            margin-left: 42px;
         }
-        p span {
-            display: inline-block;
-            animation: fadeInLeft 1s ease-out;
-        }
-
-        /* header h1 {
-            text-align: center;
-            font-size: 65px;
-        } */
-
-        p span:nth-child(1) {
-            color: green;
-        }
-
-        p span:nth-child(2) {
-            color: red;
-        }
-
-        p span:nth-child(3) {
-            color: blue;
-        }
-
-        header p {
-            text-align: center;
-            font-family: 'Ubuntu',sans-serif;
-            font-size: 32px;
-        }
-
-        div.scroll-container {
-            background-color: #333;
-            overflow: auto;
+        div.menu ul li {
+            list-style-type: none;
+            border: 1px solid transparent;
+            max-width: min-content;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 12px;
             white-space: nowrap;
-            padding: 10px;
-            width: 59%;
-            height: auto;
+            font-family: 'Akatab';
+            font-size: larger;
+            color: white;
+        }
+        div.menu ul li.Enquire{
+            border:3px solid white;
+            margin-left:35px
+        }
+        div.menu ul li:hover {
+            color: black;
+            background-color: rgb(255, 255, 255);
+            transition: 0.5s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+        }
+        div.menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            border: 4px solid transparent;
+            overflow:auto;
+            max-width:fit-content;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
-        div.scroll-container img {
-            padding: 10px;
-            width: 80%;
-            height: auto;
+        div.menu{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top:-87px;
+            left: 230px;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="/Images/logo/Real Estate Logo(3)(1)(1).png" alt="Logo">
+            <img src="/Images/logo/Real_Estate_Logo_3__1__1_-removebg-preview.png" alt="Logo">
         </div>
-        <!-- <h1><span>P</span><span>A</span><span>S</span><span><r>&nbsp;GROUP</span></h1> -->
-
-        <p>
-            <span>Passionate,</span>
-            <span>Aspiration,</span>
-            <span>Symbolic</span>
-        </p>
-        <hr>
-        <hr>
+        
     </header>
-    <div class="scroll-container">
-        <img src="Images/Bunglows/GettyImages-523075374-8d27b929fdfc4702aab5c73f821a65de.jpg" alt="Bunglow no. 1">
-        <img src="Images/Bunglows/IMG_8052a.jpg" alt="Bunglow no. 2">
-        <img src="Images/Bunglows/GettyImages-523235876-59efa2f5396e5a0010cda6dd.jpg" alt="Bunglow no. 3">
-        <img src="Images/Bunglows/shutterstock_593487752-1024x683.jpg" alt="">
+    <div class="menu">
+        <ul>
+            <li>Plans Sanctioned</li>
+            <li>Layout</li>
+            <li>Careers</li>
+            <li>Blog</li>
+            <li>About Us</li>
+            <li>FAQ</li>
+            <li class="Enquire">Enquire</li>
+        </ul>
     </div>
-
-
-
     <script>
 
     </script>
