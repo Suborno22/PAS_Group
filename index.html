@@ -7,17 +7,6 @@
     <link href='https://fonts.googleapis.com/css?family=Akatab' rel='stylesheet'>
     <title>Home</title>
     <style>
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-        
         * {
             box-sizing: border-box;  
         }
@@ -34,7 +23,7 @@
         }
 
         .logo img {
-            width: 10%; 
+            width: 30%; 
             height: auto;
             margin-left: 42px;
         }
@@ -55,7 +44,7 @@
             border:3px solid white;
             margin-left:35px
         }
-        div.menu ul li:hover {
+        div.menu ul li:hover{
             color: black;
             background-color: rgb(255, 255, 255);
             transition: 0.5s;
@@ -77,30 +66,33 @@
         div.menu{
             display: flex;
             justify-content: center;
-            position: relative;
-            top:-87px;
-            left: 230px;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="/Images/logo/Real_Estate_Logo_3__1__1_-removebg-preview.png" alt="Logo">
+            <img src="./Images/logo/Company's Logo.png" alt="Logo">
         </div>
-        
+        <div class="menu">
+            <ul>
+                <li>Plans Sanctioned</li>
+                <li>Layout</li>
+                <li>Careers</li>
+                <li>Blog</li>
+                <li>
+                    About Us
+                    <div class="dropdown-content">
+                        Follow us in:
+                        <img src="./Images/logo/facebook.png" alt="">
+                        <img src="./Images/logo/twitter-x-new-logo-round-icon-png-11692480241tdbz6jparr-removebg-preview.png" alt="">
+                    </div>
+                </li>
+                <li>FAQ</li>
+                <li class="Enquire">Enquire</li>
+            </ul>
+        </div>
     </header>
-    <div class="menu">
-        <ul>
-            <li>Plans Sanctioned</li>
-            <li>Layout</li>
-            <li>Careers</li>
-            <li>Blog</li>
-            <li>About Us</li>
-            <li>FAQ</li>
-            <li class="Enquire">Enquire</li>
-        </ul>
-    </div>
     <script>
 
     </script>
