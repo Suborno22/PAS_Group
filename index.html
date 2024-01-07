@@ -100,8 +100,6 @@
             width: 100%
         }
         @media (max-width: 767px) {
-            /* Add your styles for smaller screens here */
-            /* For example, you can modify the layout or font size */
             header{
                 flex-direction: column;
             }
@@ -112,6 +110,10 @@
 
             div.menu ul li {
                 font-size: medium;
+            }
+
+            li:focus-within .dropdown-content {
+                display: block;
             }
         }
     </style>
@@ -154,7 +156,19 @@
         <img src="" alt="">
     </div>
     <script>
+    //     document.addEventListener('DOMContentLoaded', function () {
+    //     const menuItems = document.querySelectorAll('.menu ul li');
 
+    //     menuItems.forEach((item) => {
+    //         item.addEventListener('touchstart', function () {
+    //             this.classList.add('hovered');
+    //         });
+
+    //         item.addEventListener('touchend', function () {
+    //             this.classList.remove('hovered');
+    //         });
+    //     });
+    // });
     </script>
 </body>
 </html>
