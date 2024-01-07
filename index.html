@@ -14,8 +14,9 @@
         header {
             padding: 15px;
             display: flex;
-            align-items: center;
+            align-items:end;
             background-color: rgb(122, 153, 153);
+            position: absolute;
         }
 
         .logo {
@@ -40,7 +41,7 @@
             font-size: larger;
             color: white;
         }
-        div.menu ul li.Enquire{
+        div.menu ul li:last-child{
             border:3px solid white;
             margin-left:35px
         }
@@ -61,20 +62,43 @@
             padding: 5px;
             padding-left: 15px;
             padding-right: 15px;
+            margin-top: 9px;
         }
 
         div.menu{
             display: flex;
-            justify-content: center;
+            justify-content:flex-end;
+            position: relative;
+            bottom:-37px;
         }
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 160px;
+            max-width:min-content;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             padding: 12px 16px;
             z-index: 1;
+            text-align: center;
+        }
+        .dropdown-content div.logos{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .logos img{
+            width: 70%;
+            margin-bottom: 25px;
+            height: auto;
+        } 
+        li:hover .dropdown-content{
+            display: block;
+        }
+        .logos img.X{
+            width: 80%
+        }
+        .logos img.Instagram{
+            width: 100%
         }
     </style>
 </head>
@@ -86,19 +110,29 @@
         <div class="menu">
             <ul>
                 <li>Plans Sanctioned</li>
-                <li>Layout</li>
+                <li>
+                    Layout
+                    <div class="dropdown-content">
+                        <p>3D Plans</p>
+                        <p>Floor Plans</p>
+                        <p>Layout maps</p>
+                    </div>
+                </li>
                 <li>Careers</li>
                 <li>Blog</li>
                 <li>
                     About Us
                     <div class="dropdown-content">
-                        Follow us in:
-                        <img src="./Images/logo/facebook.png" alt="">
-                        <img src="./Images/logo/twitter-x-new-logo-round-icon-png-11692480241tdbz6jparr-removebg-preview.png" alt="">
+                        <p>Follow us in:</p>
+                        <div class="logos">
+                            <img src="./Images/logo/facebook.png" alt="facebook">
+                            <img src="./Images/logo/twitter-x-new-logo-round-icon-png-11692480241tdbz6jparr-removebg-preview.png" alt="X" class="X">
+                            <img src="./Images/logo/5ecec6ef73e4440004f09e75.png" alt="Instagram" class="Instagram">
+                        </div>
                     </div>
                 </li>
                 <li>FAQ</li>
-                <li class="Enquire">Enquire</li>
+                <li>Enquire</li>
             </ul>
         </div>
     </header>
