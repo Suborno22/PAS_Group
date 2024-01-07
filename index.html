@@ -15,7 +15,6 @@
             display: flex;
             align-items:end;
             background-color: rgb(122, 153, 153);
-            position: absolute;
         }
         .logo img {
             width: 30%; 
@@ -29,22 +28,22 @@
             width: 100%;
             height: auto;
             box-sizing: border-box;
-            padding: 12px;
+            padding: .9rem;
             white-space: nowrap;
             font-family: 'Akatab';
-            font-size: larger;
+            font-size: 1.2rem;
             color: white;
         }
         div.menu ul li:last-child{
             border:3px solid white;
-            margin-left:35px
+            margin-left:3vw;
+            transition: 0.9s;
         }
         div.menu ul li:hover{
             color: black;
             background-color: rgba(255, 255, 255, 0.445);
             transition: 0.5s;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
         }
         div.menu ul {
             display: flex;
@@ -63,7 +62,7 @@
             display: flex;
             justify-content:flex-end;
             position: relative;
-            bottom:-37px;
+            bottom:-20px;
         }
         .dropdown-content {
             display: none;
@@ -79,10 +78,10 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+            row-gap: 1rem;
         }
         .logos img{
             width: 70%;
-            margin-bottom: 25px;
             height: auto;
         } 
         li:hover .dropdown-content{
@@ -97,21 +96,22 @@
         @media (max-width: 767px) {
             header{
                 flex-direction: column;
+                align-items: center;
             }
             .logo img {
-                width: 80%; 
-                margin-left: 10px;
+                width: 60%; 
+                margin-left: 19vw;
             }
 
             div.menu ul li {
-                font-size: medium;
+                font-size: 1rem;
             }
 
             li:focus-within .dropdown-content {
                 display: block;
             }
             div.menu ul li:last-child{
-                margin-left:15vw;
+                background-color: rgba(240, 255, 254, 0.171);
             }
         }
     </style>
@@ -154,19 +154,6 @@
         <img src="" alt="">
     </div>
     <script>
-    //     document.addEventListener('DOMContentLoaded', function () {
-    //     const menuItems = document.querySelectorAll('.menu ul li');
-
-    //     menuItems.forEach((item) => {
-    //         item.addEventListener('touchstart', function () {
-    //             this.classList.add('hovered');
-    //         });
-
-    //         item.addEventListener('touchend', function () {
-    //             this.classList.remove('hovered');
-    //         });
-    //     });
-    // });
     </script>
 </body>
 </html>
