@@ -10,7 +10,6 @@
         * {
             box-sizing: border-box;  
         }
-
         header {
             padding: 20px;
             display: flex;
@@ -47,7 +46,7 @@
         }
         div.menu ul li:hover{
             color: black;
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(255, 255, 255, 0.445);
             transition: 0.5s;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
@@ -100,8 +99,20 @@
         .logos img.Instagram{
             width: 100%
         }
-        @media only screen and (min-width: 600px){
+        @media (max-width: 767px) {
+            /* Add your styles for smaller screens here */
+            /* For example, you can modify the layout or font size */
+            header{
+                flex-direction: column;
+            }
+            .logo img {
+                width: 80%; 
+                margin-left: 10px;
+            }
 
+            div.menu ul li {
+                font-size: medium;
+            }
         }
     </style>
 </head>
