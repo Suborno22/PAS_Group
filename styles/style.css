@@ -6,9 +6,10 @@ header {
     display: flex;
     align-items:end;
     background-color: rgb(122, 153, 153);
+    height: 1%;
 }
 .logo img {
-    width: 30%; 
+    width: 20%; 
     height: auto;
     margin-left: 42px;
 }
@@ -51,9 +52,9 @@ div.menu ul {
 
 div.menu{
     display: flex;
-    justify-content:flex-end;
+    align-items:baseline;
     position: relative;
-    bottom:-20px;
+    margin-top: 1vw;
 }
 .dropdown-content {
     display: none;
@@ -93,12 +94,40 @@ li:hover .dropdown-content{
         width: 60%; 
         margin-left: 19vw;
     }
-
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
     div.menu ul li {
         font-size: 1rem;
         white-space: normal;
     }
-
     li:active .dropdown-content {
         display: block;
     }

@@ -5,7 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Akatab' rel='stylesheet'>
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <style>
+        * {
+            box-sizing: border-box;  
+        }
+        header {
+            width: 100%;
+            display: flex;
+            align-items:end;
+            background-color: rgb(122, 153, 153);
+            justify-content: space-between;
+        }
+        .logo img {
+            width: 10vw; 
+            height: auto;
+            margin-left: 42px;
+        }
+        div.menu ul li {
+            list-style-type: none;
+            border: 1px solid transparent;
+            max-width: min-content;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: .5em;
+            white-space: nowrap;
+            font-family: 'Akatab';
+            font-size: 1rem;
+            color: white;
+        }
+        div.menu ul li:last-child{
+            border:3px solid white;
+            margin-left:3vw;
+            transition: 0.9s;
+        }
+        div.menu ul li:hover{
+            color: black;
+            background-color: rgba(255, 255, 255, 0.445);
+            transition: 0.5s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        div.menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.3em;
+            border: 4px solid transparent;
+            overflow:auto;
+            max-width:fit-content;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 9px;
+        }
+
+        div.menu{
+            display: flex;
+            align-items:baseline;
+            position: relative;
+            margin-top: 1vw;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            max-width:min-content;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            text-align: center;
+        }
+        .dropdown-content div.logos{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+        .logos img{
+            width: 70%;
+            height: auto;
+        } 
+        li:hover .dropdown-content{
+            display: block;
+        }
+        .logos img.X{
+            width: 80%
+        }
+        .logos img.Instagram{
+            width: 100%
+        }
+        @media (max-width: 767px) {
+            header{
+                flex-direction: row;
+                align-items: center;
+                height: 22vw;
+            }
+            .logo img {
+                width: 5em; 
+                margin-left: 3vw;
+            }
+            div.menu ul li {
+                font-size: 0.5rem;
+                white-space: normal;
+                padding:1vm
+            }
+            div.menu ul{
+                column-gap:0.2vw
+            }
+            li:active .dropdown-content {
+                display: block;
+            }
+            div.menu ul li:last-child{
+                background-color: rgba(240, 255, 254, 0.171);
+                margin-left: 0vw;
+            }
+        }
+    </style>
     <title>Home</title>
 </head>
 <body>
@@ -29,7 +144,7 @@
                 <li>
                     About Us
                     <div class="dropdown-content">
-                        <p>Follow us in:</p>
+                        <p>Follow us on:</p>
                         <div class="logos">
                             <img src="./Images/logo/facebook.png" alt="facebook">
                             <img src="./Images/logo/twitter-x-new-logo-round-icon-png-11692480241tdbz6jparr-removebg-preview.png" alt="X" class="X">
