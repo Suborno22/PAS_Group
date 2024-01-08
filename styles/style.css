@@ -96,6 +96,7 @@ li:hover .dropdown-content{
 
     div.menu ul li {
         font-size: 1rem;
+        white-space: normal;
     }
 
     li:focus-within .dropdown-content {
