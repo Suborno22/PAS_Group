@@ -101,23 +101,34 @@
                 height: 22vw;
             }
             .logo img {
-                width: 5em; 
+                width: 6em; 
                 margin-left: 3vw;
             }
+            div.menu{
+                width: 12em;
+            }
             div.menu ul li {
-                font-size: 0.5rem;
-                white-space: normal;
-                padding:1vm
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
             }
             div.menu ul{
-                column-gap:0.2vw
+                display:inline-block;
+                background-color: #333;
+                white-space: nowrap;
+                overflow:auto;
+                -webkit-overflow-scrolling: touch; 
+                padding: 5px 15px; /* Existing styles */
+                margin-top: 9px; /* Existing styles */
+                background-color: #333; /* Existing styles */
             }
             li:active .dropdown-content {
-                display: block;
+                display:block;
             }
             div.menu ul li:last-child{
                 background-color: rgba(240, 255, 254, 0.171);
-                margin-left: 0vw;
             }
         }
     </style>
