@@ -11,7 +11,7 @@
 <body>
     <header id="header">
         <div class="logo">
-            <img src="./Images/logo/Company's Logo.png" alt="Logo">
+            <img id="logoImage" src="./Images/logo/Company's Logo.png" alt="Logo">
         </div>
         <div class="menu">
             <ul>
@@ -52,15 +52,21 @@
         </div>
     </div>
     <script>
+        let logoImage = document.getElementById("logoImage");
+        let logoSrc = logoImage.src;
+
         function scrollFunction() {
             const header = document.getElementById("header");
             if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 header.classList.add("scrolled");
+                // Change logo image to the white version
+                logoImage.src = "./Images/logo/Company's Logo white.png";
             } else {
                 header.classList.remove("scrolled");
+                // Change back to the original logo image
+                logoImage.src = logoSrc;
             }
         }
-
         window.onscroll = function() {
             scrollFunction();
         };

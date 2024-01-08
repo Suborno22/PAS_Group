@@ -31,7 +31,7 @@ header.scrolled {
 }
 
 header.scrolled .logo img {
-    width: 10vw; 
+    width: 12vw; 
     margin-left: 2vw;
     transition: 2s;
 }
