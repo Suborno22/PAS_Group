@@ -5,137 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Akatab' rel='stylesheet'>
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
-    <style>
-        * {
-            box-sizing: border-box;  
-        }
-        header {
-            width: 100%;
-            display: flex;
-            align-items:end;
-            background-color: rgb(122, 153, 153);
-            justify-content: space-between;
-        }
-        .logo img {
-            width: 10vw; 
-            height: auto;
-            margin-left: 42px;
-        }
-        div.menu ul li {
-            list-style-type: none;
-            border: 1px solid transparent;
-            max-width: min-content;
-            width: 100%;
-            height: auto;
-            box-sizing: border-box;
-            padding: .5em;
-            white-space: nowrap;
-            font-family: 'Akatab';
-            font-size: 1rem;
-            color: white;
-        }
-        div.menu ul li:last-child{
-            border:3px solid white;
-            margin-left:3vw;
-            transition: 0.9s;
-        }
-        div.menu ul li:hover{
-            color: black;
-            background-color: rgba(255, 255, 255, 0.445);
-            transition: 0.5s;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        div.menu ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.3em;
-            border: 4px solid transparent;
-            overflow:auto;
-            max-width:fit-content;
-            padding: 5px;
-            padding-left: 15px;
-            padding-right: 15px;
-            margin-top: 9px;
-        }
-
-        div.menu{
-            display: flex;
-            align-items:baseline;
-            position: relative;
-            margin-top: 1vw;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            max-width:min-content;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 12px 16px;
-            z-index: 1;
-            text-align: center;
-        }
-        .dropdown-content div.logos{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            row-gap: 1rem;
-        }
-        .logos img{
-            width: 70%;
-            height: auto;
-        } 
-        li:hover .dropdown-content{
-            display: block;
-        }
-        .logos img.X{
-            width: 80%
-        }
-        .logos img.Instagram{
-            width: 100%
-        }
-        @media (max-width: 767px) {
-            header{
-                flex-direction: row;
-                align-items: center;
-                height: 22vw;
-            }
-            .logo img {
-                width: 6em; 
-                margin-left: 3vw;
-            }
-            div.menu{
-                width: 12em;
-            }
-            div.menu ul li {
-                display: inline-block;
-                color: white;
-                text-align: center;
-                padding: 14px;
-                text-decoration: none;
-            }
-            div.menu ul{
-                display:inline-block;
-                background-color: #333;
-                white-space: nowrap;
-                overflow:auto;
-                -webkit-overflow-scrolling: touch; 
-                padding: 5px 15px; /* Existing styles */
-                margin-top: 9px; /* Existing styles */
-                background-color: #333; /* Existing styles */
-            }
-            li:active .dropdown-content {
-                display:block;
-            }
-            div.menu ul li:last-child{
-                background-color: rgba(240, 255, 254, 0.171);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
     <title>Home</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="logo">
             <img src="./Images/logo/Company's Logo.png" alt="Logo">
         </div>
@@ -168,10 +42,28 @@
             </ul>
         </div>
     </header>
-    <div>
-        <img src="" alt="">
+    <div class="first line">
+        <div class="scroll-container">
+            <img src="./Images/Bunglows/GettyImages-523075374-8d27b929fdfc4702aab5c73f821a65de.jpg" alt="Cinque Terre">
+            <img src="./Images/Bunglows/GettyImages-523235876-59efa2f5396e5a0010cda6dd.jpg" alt="Forest">
+            <img src="./Images/Bunglows/IMG_8052a.jpg" alt="Northern Lights">
+            <img src="./Images/Bunglows/Mendenhall-exteriors-2-1-scaled-e1610720952727.jpg" alt="Mountains">
+            <img src="./Images/Bunglows/shutterstock_593487752-1024x683.jpg" alt="Mountains">
+        </div>
     </div>
     <script>
+        function scrollFunction() {
+            const header = document.getElementById("header");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        }
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
     </script>
 </body>
 </html>
