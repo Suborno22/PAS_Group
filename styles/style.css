@@ -11,6 +11,7 @@ header {
     transition: 1s;
     position: inherit;
     top: 0;
+    height: fit-content;
 }
 
 header.scrolled {
@@ -19,9 +20,10 @@ header.scrolled {
     align-items: end;
     background-color: rgba(112, 160, 160);
     justify-content: space-between;
-    transition: 1s;
+    transition: 0.5s;
     position: fixed;
     top: 0;
+    height: min-content;
 }
 
 .logo img {
@@ -32,8 +34,7 @@ header.scrolled {
 
 header.scrolled .logo img {
     width: 10vw; 
-    margin-left: 2vw;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 header.scrolled div.menu ul li {
@@ -47,7 +48,7 @@ header.scrolled div.menu ul li {
     font-family: 'Akatab';
     font-size: 1rem;
     color: rgb(255, 255, 255);
-    transition:2s;
+    transition:0.5s;
 }
 
 div.menu ul li {
