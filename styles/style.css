@@ -99,7 +99,7 @@ li:hover .dropdown-content{
         white-space: normal;
     }
 
-    li:focus-within .dropdown-content {
+    li:active .dropdown-content {
         display: block;
     }
     div.menu ul li:last-child{
