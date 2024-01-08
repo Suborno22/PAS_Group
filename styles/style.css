@@ -72,6 +72,7 @@ div.menu ul li:last-child {
 }
 
 header.scrolled div.menu ul li:last-child {
+    border: 3px solid rgb(255, 255, 255);
     margin-left: 3vw;
     transition: 0.9s;
 }
