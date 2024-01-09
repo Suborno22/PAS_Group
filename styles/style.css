@@ -17,13 +17,13 @@ header {
 header.scrolled {
     width: 100%;
     display: flex;
-    align-items: end;
+    align-items: center;
     background-color: rgba(112, 160, 160);
     justify-content: space-between;
     transition: 0.5s;
     position: fixed;
     top: 0;
-    height: min-content;
+    height:14.5%
 }
 
 .logo img {
@@ -62,7 +62,6 @@ div.menu ul li {
     white-space: nowrap;
     font-family: 'Akatab';
     font-size: 1rem;
-    font-weight: bold;
     color: rgb(0, 0, 0);
 }
 
@@ -102,7 +101,7 @@ div.menu ul {
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 22px;
-    bottom:-23px;
+    bottom:-20px;
 }
 
 div.menu {
